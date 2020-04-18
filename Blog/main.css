@@ -10,7 +10,7 @@ img {
 }
 
 body {
-    background-color: paleturquoise;
+    background-color: rgb(238, 232, 232);
 }
 
 header {
@@ -20,20 +20,24 @@ header {
     font-size: 20px;
     color: white;
     width: 100%;
+    border-radius: 10px;
   }
+
 .left_box {
     color: white;
     background-color: darkgoldenrod;
     float: left;
     width: 24.5%;
-    padding: 20px;
+    padding: 10px 20px 10px 20px;
     margin-top: 1%;
+    border-radius: 10px;
 }
 
 .left_box ul {
     list-style-type: none;
     padding: 0px;
-    margin: 10px;
+    margin-left: 40px;
+    margin-top: 0px;
 }
 
 .right_box {
@@ -41,14 +45,16 @@ header {
     background-color: silver;
     float: left;
     width: 74.5%;
-    padding: 20px;
+    padding: 0px 20px 0px 20px;;
     margin: 1% 0 0 1%;
+    border-radius: 10px;
 }
 
 .inside_right_box {
     padding: 10px;
     text-align: center;
     background-color: lavender;
+    border-radius: 10px;
 }
 
 footer {
