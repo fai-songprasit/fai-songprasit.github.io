@@ -110,3 +110,44 @@ footer img {
     border-color: red;
     border-width: 5px;
 }
+
+.border_solid {
+    color: black;
+    background-color: silver;
+    float: left;
+    margin: 0px 10px 15px 0px;
+    width: 30%;
+    padding: 5px 2px 5px 2px;
+    border-radius: 10px;
+    text-align: center;
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+}
+
+.border_dash {
+    color: black;
+    background-color: silver;
+    float: left;
+    margin: 0px 10px 15px 10px;
+    width: 30%;
+    padding: 5px 2px 5px 2px;
+    border-radius: 10px;
+    text-align: center;
+    border-style: dashed;
+    border-color: red;
+    border-width: 5px;
+}
+
+.border_dot {
+    color: black;
+    background-color: silver;
+    float: left;
+    margin: 0px 10px 15px 10px;
+    width: 30%;
+    padding: 5px 2px 5px 2px;
+    border-radius: 10px;
+    text-align: center;
+    border-style: dotted;
+    border-color: red;
+    border-width: 5px;
