@@ -15,6 +15,11 @@ body {
     background-color: rgb(238, 232, 232);
 }
 
+body img {
+    width: 500px;
+    Height: 300px;
+}
+
 header img {
     width: 150px;
     height: 150px;
