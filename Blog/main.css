@@ -4,6 +4,13 @@
     font-family: 'Exo', sans-serif;
   }
 
+/* blog post text styles are between here */
+.text_width {
+    width: 90%;
+    padding-left: 4%;
+}
+/* blog post text styles are between here */
+
 body {
     background-color: rgb(238, 232, 232);
 }
