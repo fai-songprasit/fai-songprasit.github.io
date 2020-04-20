@@ -40,7 +40,7 @@ header {
     color: white;
     background-color: rgb(128, 160, 207);
     float: left;
-    width: 24.5%;
+    width: 22.5%;
     padding: 10px 20px 10px 20px;
     margin-top: 1%;
     border-radius: 10px;
@@ -49,7 +49,7 @@ header {
 .left_box ul {
     list-style-type: none;
     padding: 0px;
-    margin-left: 40px;
+    margin-left: 20px;
     margin-top: 0px;
 }
 
@@ -57,7 +57,7 @@ header {
     color: black;
     background-color: silver;
     float: left;
-    width: 74.5%;
+    width: 76.5%;
     padding: 0px 20px 0px 20px;;
     margin: 1% 0 0 1%;
     border-radius: 10px;
@@ -115,6 +115,13 @@ footer img {
     border-color: red;
     border-width: 5px;
 }
+.clearfix:after {
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+    }
 
 .border_solid {
     color: black;
@@ -156,3 +163,4 @@ footer img {
     border-style: dotted;
     border-color: red;
     border-width: 5px;
+}
