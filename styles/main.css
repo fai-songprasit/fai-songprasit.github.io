@@ -34,7 +34,7 @@ header {
     color: white;
     width: 100%;
     border-radius: 10px;
-  }
+}
 
 .left_box {
     color: white;
@@ -93,12 +93,29 @@ footer img {
     margin-left: 2%;
 }
 
+.list_spacing li {
+    margin-bottom: 5px;
+}
+
+.list_width {
+    width: 70%;
+}
+
 .example {
     color: black;
     background-color: silver;
     float: center;
     width: 30%;
     padding: 5px 2px 5px 2px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.example2 {
+    color: black;
+    background-color: silver;
+    float: center;
+    padding: 5px 5px 5px 5px;
     border-radius: 10px;
     text-align: center;
 }
@@ -115,13 +132,14 @@ footer img {
     border-color: red;
     border-width: 5px;
 }
+
 .clearfix:after {
     content: "."; 
     visibility: hidden; 
     display: block; 
     height: 0; 
     clear: both;
-    }
+}
 
 .border_solid {
     color: black;
