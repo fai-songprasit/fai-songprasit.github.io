@@ -5,7 +5,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Exo&display=swap" rel="stylesheet" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>JavaScript and DOM</title>
+        <title>HTML, CSS, JavaScript and DOM</title>
         <link href="../styles/main.css" rel="stylesheet" type="text/css">
     </head>
     <body><a href="../index.html">Back to Home</a>
@@ -62,7 +62,7 @@
                     <p><em>An example of when everyone "loops" in daily life is your shower routine. You 
                         walk in, lock the door behind you (or don't...), get undressed (or don't...), 
                         jump in, have a quick rinse, lather some soap on you, rinse again and repeat this 
-                        process the same way daily.</em></p>
+                        process the same way daily (or twice daily... which ever strikes your fancy).</em></p>
 
                     <p>Getting back into functions for a bit. The results of these functions are 
                         dependent on which set of rules it has followed to produce the answer that we 
@@ -87,9 +87,9 @@
             <h2>What is DOM and why is it relevant to all of this?</h2>
                 <h3><em>What is DOM?</em></h3>
                 <img src="../images/DOM.png" alt="example of DOM" class="float_left2">
-                    <p><strong>Document Object Model</strong> or <strong>DOM</strong> is a programming 
-                        interface for HTML (the skeleton of your web page). It represents the page so 
-                        that programs can change the document structure, style, and content. The DOM 
+                    <p><strong>Document Object Model</strong> or <strong>DOM</strong> is what translates 
+                        your HTML and CSS document onto a web page! It represents the page so that 
+                        programs can change the document structure, style, and content. The DOM 
                         represents the document as nodes and objects. That way, programming languages can 
                         connect to the page.</p>
 
@@ -111,9 +111,63 @@
                     <p><strong>Example of what inspecting a page looks like:</strong></p>
                     <img src="../images/inspect.png" alt="example inspection of Fai's Blog" class="view">
             <h2>Accessing data in JavaScript from arrays and objects</h2>
-                <h3><em>Step 1.... What are arrays and objects?</em></h3>
+                <h3><em>What are arrays and objects? How are they different?</em></h3>
+                        <p>In JavaScript pretty much everything is an object. It can be an array or a 
+                            function, or it can be numbers, names and booleans (true/false) as long as it 
+                            is attached to a "key". In the latter cases, a "key" is basically an 
+                            identifier that you attach them to.</p>
 
-                   
+                        <p>Before we move on to talk about objects and arrays, we need to first 
+                            understand what "variables" are. Variable or var represents an element or key 
+                            in a mathematical context. <em><u>Why is this important!?</u> We have to 
+                            remember that all coding languages are mathematical, therefore we have to 
+                            speak its language inorder for it to understand our intentions.</em></p>
+
+                        <p><em><strong>Example of key as object:</strong></em></p>
+                        <div class="example1">
+                            <p>var x = {</p>
+                            <p>name: "John", // anything inside "" is a string</p>
+                            <p>age: 25, // number</p>
+                            <p>isStrange: true // boolean (true/false)</p>
+                            <p>}</p>
+                        </div>
+
+                        <p>In the examples given, in case you haven't worked it out already, the key is 
+                            "x". The reason why the properties in these keys cannot ever be an object is 
+                            becasue objects can be manipulated/changed (e.g. x can later be changed to x 
+                            = 20 and the computer will take the last definied number as it's value,
+                            remember control flow), while the numbers, strings and booleans are absolute 
+                            (15 will always be 15, "John" is always "John", true is always true etc..</p>
+                        <br>
+                        <p>Lets talk about arrays, arrays are special variables that can contain more 
+                            than one value at a time. We can look at it like a shopping list, the list 
+                            itself is an array and all the things in the list are the variables that it 
+                            contains.</p>
+                        <p><em><strong>Example of an array:</strong></em></p>
+                        <div class="example1">
+                            <p>var shopping_list = ["leek", "celery", "carrot"]</p>
+                        </div>
+
+                        <p>In this case the array has been given a name "shopping_list" and given leek, 
+                            celery and carrot as its three values. Now that we have defined the variable 
+                            shopping_list, we can retrieve the items in the list at a later stage.</p>
+
+                        <p>So how do you access the information in objects and arrays? As we have given 
+                            them all names and/or keys as variables, we can call on the values at any 
+                            time, like calling your friend by name. By taking into account the above 
+                            examples of objects and arrays, we can call them like this:</p>
+                        
+                        <div class = "example1">
+                            <p><strong>Objects</strong></p>
+                            <p>return x.name // retruns John</p>
+                            <p><strong>Array</strong></p>
+                            <p>return shopping_list[1] // returns celery</p>
+                        </div>
+
+                        <p>In order to call objects, first you have to reference its key (x), then the name that that you have given to that specific object (name) with a "." between them. This means that if we were to write <em>x.age</em> it would then return <em>25</em>.</p> 
+                        
+                        <p>For Arrays, first we have to remember that you have to call them by their index numbers, which actually starts from 0 to 1 to 2 and so on. What we see as second in the list is actually 1 in index numbers. To access that value, we must first declare its variable name (shopping_list) followed by its index number [1].</p>
+            <h2>What are functions and why are they useful?</h2>
     </div>
     </body>
 </html>

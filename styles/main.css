@@ -152,6 +152,18 @@ footer img {
     text-align: center;
 }
 
+.example1 {
+    color: black;
+    background-color: silver;
+    float: left;
+    width: 35%;
+    height: auto;
+    padding: 0px 0px 0px 20px;
+    border-radius: 10px;
+    text-align: left;
+    margin: 0px 20px 10px 0px;
+}
+
 .example2 {
     color: black;
     background-color: silver;
