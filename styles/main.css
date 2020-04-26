@@ -4,12 +4,10 @@
     font-family: 'Exo', sans-serif;
   }
 
-/* blog post text styles are between here */
 .text_width {
     width: 90%;
     padding-left: 4%;
 }
-/* blog post text styles are between here */
 
 body {
     background-color: rgb(238, 232, 232);
@@ -26,14 +24,24 @@ header img {
     border-radius: 50%;
 }
 
-.float_image {
+.float_right {
     border : dashed;
     border-color: teal;
     border-radius: 5px;
-    margin: -15px 5px 5px 10px;
+    margin: 0px 5px 5px 10px;
     float: right;
-    width: 400px;
-    height: 250px;
+    width: 350px;
+    height: 225px;
+}
+
+.float_left {
+    border : dashed;
+    border-color: teal;
+    border-radius: 5px;
+    margin: 0px 10px 5px 0px;
+    float: left;
+    width: 200px;
+    height: 50px;
 }
 
 .arrow_size {
@@ -56,7 +64,7 @@ header {
     background-color: rgb(128, 160, 207);
     float: left;
     width: 22.5%;
-    padding: 10px 20px 10px 20px;
+    padding: -10px 20px 10px 20px;
     margin-top: 1%;
     border-radius: 10px;
 }
