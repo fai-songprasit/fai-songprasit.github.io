@@ -94,6 +94,10 @@ header {
     margin-top: 0px;
 }
 
+.nodot {
+    list-style-type: none;
+}
+
 .right_box {
     color: black;
     background-color: silver;
