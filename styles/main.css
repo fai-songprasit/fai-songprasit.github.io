@@ -26,6 +26,21 @@ header img {
     border-radius: 50%;
 }
 
+.float_image {
+    border : dashed;
+    border-color: teal;
+    border-radius: 5px;
+    margin: -15px 5px 5px 10px;
+    float: right;
+    width: 400px;
+    height: 250px;
+}
+
+.arrow_size {
+    width: 35px;
+    height: 25px;
+}
+
 header {
     background-color: #666;
     padding: 30px;
