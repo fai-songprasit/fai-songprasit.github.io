@@ -42,10 +42,10 @@
             <h2>Getting right into it!</h2>
                 <h3><em>What is loop?</em></h3>
                     <p>There is a little bit more going on with loop than just a few lines of code on a 
-                        page. Loops require a set of rules that dictate what each interaction with the 
-                        page must go through (if it is there) before it produces a result that we see on 
-                        the web page. Loops are used to repeatedly run a block of code - until a certain 
-                        condition is met.</p>
+                        page. Loops require a set of rules that dictate what a specified type of 
+                        interaction with the page must go through before it produces a result that we see 
+                        on the web page. Loops are used to repeatedly run a block of code - until a 
+                        certain condition is met.</p>
                     
                     <img src="../images/vege.jpg" alt="cartoon having a shower" class="float_right">
 
@@ -57,16 +57,16 @@
                             <li>Step 1: cut potatoes into quaters then into small 2cm cubes.</li>
                             <li>Step 2: cut zucchini into quarters then into small 2cm cubes.</li>
                             <li>Step 3: cut capsicum into quarters then into small 2cm cubes.</li>
-                            <li>and so on.....</li>
+                            <li>and so on until all vegetables have been cut.....</li>
                         </ul>
                         You could just write "dice vegetables into small 2cm cubes" without the 
-                        redundancy.</em> This is effectively what loops do for us in code!</p>
+                        redundancy.</em> This is effectively what looping does for us in code!</p>
 
                     <p>The results that we get from lopping depends on which set of rules it has followed 
                         to produce the answer that we get. These rules can be as simple as counting up/
                         down or it can pass through a set of other rules which must follow a procedure 
-                        called "control flow". The interations go through each set until an answer is 
-                        found or it has come to the end of it's preset looping point (e.g. stop counting 
+                        called "control flow". The interactions go through each set until an answer is 
+                        found or it has come to the end of its preset looping point (e.g. stop counting 
                         at 50), then and only then does the function stop looping. The control flow 
                         basically gives us a guideline of what order we should set the rules in. 
                         Ultimately we want the web page to go through and gather as much information as 
@@ -130,13 +130,18 @@
                             <p>}</p>
                         </div>
 
-                        <p>In the examples given, in case you haven't worked it out already, the key is 
+                        <p>In the example given, in case you haven't worked it out already, the key is 
                             "x". The reason why the properties in these keys cannot ever be an object is 
-                            becasue objects can be manipulated/changed (e.g. x can later be changed to x 
-                            = 20 and the computer will take the last definied number as it's value,
+                            becasue objects can be manipulated/changed (e.g. age can later be changed to age = 20 and the computer will take the last definied number as it's value,
                             remember control flow), while the numbers, strings and booleans are absolute 
-                            (15 will always be 15, "John" is always "John", true is always true etc..</p>
-                        <br>
+                            (15 will always be 15 and true is always true etc.).</p>
+                        
+                        <p><em><strong><u>For future references!</u></strong> We talked about DOM just 
+                            before where I gave an example of what the web page would look like in 
+                            "inspect". If you look at the above picture you can see a tab called 
+                            "Console" next to "Elements" which is hightlighted. We use this console to 
+                            see if we  will get the results we need from both objects and arrays.</em></p>
+
                         <p>Lets talk about arrays, arrays are special variables that can contain more 
                             than one value at a time. We can look at it like a shopping list, the list 
                             itself is an array and all the things in the list are the variables that it 
@@ -157,9 +162,9 @@
                         
                         <div class = "example1">
                             <p><strong>Objects</strong></p>
-                            <p>return x.name // retruns John</p>
+                            <p>console.log(x.name) // retruns John</p>
                             <p><strong>Array</strong></p>
-                            <p>return shopping_list[1] // returns celery</p>
+                            <p>console.log (shopping_list[1]) // returns celery</p>
                         </div>
 
                         <p>In order to call objects, first you have to reference its key (x), then the 
@@ -175,14 +180,36 @@
 
             <h2>What are functions and why are they useful?</h2>
             <p>We can control many aspects of the website when it comes to the interactive side of 
-                things. JavaScript, as mentioned above, is in charge of all of that. A good example 
-                is at the bottom of a Trademe listing, you will find something like this:</p>
+                things using functions. A function is like a math equation but with code, it is a block 
+                of code that is designed to perform a specific task or calculate a value when executed(or 
+                "invoked"). A good example is at the bottom of a Trademe listing, you will find something 
+                like this:</p>
 
             <img src="../images/viewcount.png" alt="example of view count" class="float_left1">
 
-            <p>This count is updated everytime someone clicks on the listing to have a look at the 
-                listing. This count uses a function that was written as part of the page's JavaScript 
-                code.</p>
+            <p>This count is updated everytime someone clicks on the listing. This count uses a 
+                "function", where by the click action passes through the defined parameters and arguement 
+                set inside the function and produces the increased page count in realtime.</p>
+            
+            <p>Once named, A function can be used over and over again without us needed to rewrite a completely new block of code everytime we want to to pass through a different set of values while using the same set of rules/argument. Like loop, it is there to make our code a lot less redundent.</p>
+
+            <p><strong>Example:</strong></p>
+            <div class="example1">
+                <p>function ShowMessage(firstName, lastName) {</p>
+                    <ul class = "nodot">
+                    <li>alert("Hello " + firstName + " " + lastName);</li>
+                    </ul>
+                <p>}</p>
+                
+                <p>ShowMessage("Steve", "Jobs");</p>
+                <p>ShowMessage("Bill", "Gates");</p>
+            </div>
+
+            <p>As you would have guessed the new ShowMessage results that we would get from the names that I put in after } would be "Hello Steve Jobs" and "hello Bill Gates" respectively. This example has shown us that instead of having to write</p>
+            <p><em>comsole.log("Hello newFirstName newLastName")</em></p> 
+            <p>everytime we get more names, we can just use the function name ShowMessage(__,__) for every new name that we come across after the function declaration.</p>
+            <p><em><strong><u>Note:</u></strong> Functions do not automatically create spaces so you will have to add them manually INSIDE the function.</em></p>
+            
     </div>
     </body>
 </html>
