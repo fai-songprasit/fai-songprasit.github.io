@@ -99,7 +99,7 @@ header {
 
 .left_box ul {
     list-style-type: none;
-    padding: 0px;
+    padding-left: 10px;
     margin-left: 20px;
     margin-top: 0px;
 }
