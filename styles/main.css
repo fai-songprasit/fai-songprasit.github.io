@@ -4,9 +4,31 @@
     font-family: 'Exo', sans-serif;
   }
 
+.button {
+    margin: 5px 0px 0px 10px;
+    background-color: rgb(100, 175, 153);
+    display: inline-block;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+    position: absolute;
+    left: 146px;
+    top: 60px;
+    transform: rotateZ(270deg);
+}
+
+.back-box {
+    padding: 15px;
+    background-color: rgb(100, 175, 153);
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    border-radius: 15px;
+}
+
 .text_width {
-    width: 90%;
-    padding-left: 4%;
+    padding: 0px 20px 10px 20px;
+    border: 3px dashed gold;
+    border-radius: 10px;
 }
 
 body {
