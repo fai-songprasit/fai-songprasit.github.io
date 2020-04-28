@@ -14,7 +14,8 @@
         <div class="text_width">
         <h1><strong><u>The inner workings of Web Pages</u></strong></h1>
             <h2>Web pages 101</h2>
-                <p>Imagine a web page as a movie set. The screenplay and scripts are 
+                <p>
+                    Imagine a web page as a movie set. The screenplay and scripts are 
                     written as the skeleton of how the film should progress. Then you have 
                     to decide on how many people you need for the camera crew, which 
                     actors to cast and what special effects you think might make this 
@@ -29,11 +30,11 @@
                     would have worked out just fine with just the crew (cast included), 
                     but having a director there in charge of how they all interact and how 
                     the film is put together could be the difference between making 
-                    Blockbuster smasher or just your average movie.</p>
-                
+                    Blockbuster smasher or just your average movie.
+                </p>               
                 <img src="../images/javascript.jpeg" alt="JavaSript, CSS and HTML works together" class="float_right">
-
-                <p>A web page is kind of like that, there are different styles of code 
+                <p>
+                    A web page is kind of like that, there are different styles of code 
                     that is needed to put it together. The HTML being the skeleton 
                     structure, CSS being the cast, crew and special effects, and 
                     JavaScript as the director. Like the example above, a web page could 
@@ -44,36 +45,47 @@
                     subscribes to your blog, then you want JavaScrpit. To put it more 
                     simply, HTML provides a website with its structure, CSS concerns 
                     itself with how the page is presented and JavaScrpit deals with how 
-                    the page behaves when someone interacts with it.</p>
+                    the page behaves when someone interacts with it.
+                </p>
             <h2>Getting right into it!</h2>
                 <h3><em>What is loop?</em></h3>
-                    <p>There is a little bit more going on with loop than just a few lines 
+                    <p>
+                        There is a little bit more going on with loop than just a few lines 
                         of code on a page. Loops require a set of rules that dictate what 
                         a specified type of interaction with the page must go through 
                         before it produces a result that we see on the web page. Loops are 
                         used to repeatedly run a block of code - until a certain condition 
-                        is met.</p>
-                    
+                        is met.
+                    </p>
                     <img src="../images/vege.jpg" alt="cartoon having a shower" class="float_right">
-
-                    <p><em><strong><u>Example:</u></strong> Say you were to write a 
+                    <p>
+                        <em><strong><u>Example:</u></strong> Say you were to write a 
                         cookbook recipe for how to prepare a roasted vegetables dish. 
                         There are a lot of ingredients that need to be chopped before it 
                         goes into a roasting pan. Instead of writing instructions like:
                         <ul class="nodot">
-                            <li>Step 1: cut potatoes into quaters then into small 2cm 
-                                cubes.</li>
-                            <li>Step 2: cut zucchini into quarters then into small 2cm 
-                                cubes.</li>
-                            <li>Step 3: cut capsicum into quarters then into small 2cm 
-                                cubes.</li>
-                            <li>and so on until all vegetables have been cut.....</li>
+                            <li>
+                                Step 1: cut potatoes into quaters then into small 2cm 
+                                cubes.
+                            </li>
+                            <li>
+                                Step 2: cut zucchini into quarters then into small 2cm 
+                                cubes.
+                            </li>
+                            <li>
+                                Step 3: cut capsicum into quarters then into small 2cm 
+                                cubes.
+                            </li>
+                            <li>
+                                and so on until all vegetables have been cut.....
+                            </li>
                         </ul>
                         You could just write "dice vegetables into small 2cm cubes" 
                         without the redundancy.</em> This is effectively what looping does 
-                        for us in code!</p>
-
-                    <p>The results that we get from lopping depends on which set of rules 
+                        for us in code!
+                    </p>
+                    <p>
+                        The results that we get from lopping depends on which set of rules 
                         it has followed to produce the answer that we get. These rules can 
                         be as simple as counting up/down or it can pass through a set of 
                         other rules which must follow a procedure called "control flow". 
@@ -83,9 +95,10 @@
                         looping. The control flow basically gives us a guideline of what 
                         order we should set the rules in. Ultimately we want the web page 
                         to go through and gather as much information as possible before it 
-                        produces an answer.</p>
-
-                    <p><em>You are a typical 9am to 5pm worker who only works Monday to 
+                        produces an answer.
+                    </p>
+                    <p>
+                        <em>You are a typical 9am to 5pm worker who only works Monday to 
                         Friday. You have two ways of getting to work, cylcing and busing, 
                         depending on what the weather is doing that day. Your thought 
                         process would first start with what day of the week it is. If it 
@@ -95,136 +108,161 @@
                         order of that same train of thought to first check the weather 
                         before checking what day of the week it is, you may find yourslef 
                         half way to work on a Saturday or Sunday regardless of which 
-                        method you decided to take to get there.</em></p>
+                        method you decided to take to get there.</em>
+                    </p>
             <h2>What is DOM and why is it relevant to all of this?</h2>
                 <h3><em>What is DOM?</em></h3>
                     <img src="../images/DOM.png" alt="example of DOM" class="float_left2">
-                    
-                    <p><strong>Document Object Model</strong> or <strong>DOM</strong> is 
+                    <p>
+                        <strong>Document Object Model</strong> or <strong>DOM</strong> is 
                         what translates your HTML and CSS document onto a web page! It 
                         represents the page so that programs can change the document 
                         structure, style, and content. The DOM represents the document as 
                         nodes and objects. That way, programming languages can connect to 
-                        the page.</p>
-
-                    <p>As seen in the diagram, DOM is often referred to as a tree, working 
+                        the page.
+                    </p>
+                    <p>
+                        As seen in the diagram, DOM is often referred to as a tree, working 
                         its way from the root to the branches connecting all the nodes and 
                         objects that the HTML file contains. Its is a bird's eye view of 
                         what the code looks like with the option of inspecting and 
-                        interacting with each of the branches/elements in the code.</p>
-
-                    <p>Every web browser has a DOM function embedded into it to varying 
+                        interacting with each of the branches/elements in the code.
+                    </p>
+                    <p>
+                        Every web browser has a DOM function embedded into it to varying 
                         degrees of power. This means that every web page can be interacted 
                         with/manipulated on site. You can do this by right clicking your 
-                        mouse or trackpad and navigating down to "inspect".</p>
+                        mouse or trackpad and navigating down to "inspect".
+                    </p>
                     
-                    <p><em><strong><u>NOTE:</u></strong> If you are feeling mischievous, 
+                    <p>
+                        <em><strong><u>NOTE:</u></strong> If you are feeling mischievous, 
                         YES! You can change whatever you see on a web page but keep in 
                         mind that these changes are not permanent. They will revert back 
-                        to what they were when the page is refreshed!</em></p>         
-
-                    <p><strong>Example of what inspecting a page looks like:</strong></p>
+                        to what they were when the page is refreshed!</em>
+                    </p>
+                    <p>
+                        <strong>Example of what inspecting a page looks like:</strong>
+                    </p>
                     <img src="../images/inspect.png" alt="example inspection of Fai's Blog" class="view">
             <h2>Accessing data in JavaScript from arrays and objects</h2>
                 <h3><em>What are arrays and objects? How are they different?</em></h3>
-                        <p>In JavaScript pretty much everything is an object. It can be an 
-                            array or a function, or it can be numbers, names and booleans 
-                            (true/false) as long as it is attached to a "key". In the 
-                            latter cases, a "key" is basically an identifier that you 
-                            attach them to.</p>
-
-                        <p>Before we move on to talk about objects and arrays, we need to 
+                        <p>
+                            In JavaScript pretty much everything is an object. It can be 
+                            an array or a function, or it can be numbers, names and 
+                            booleans (true/false) as long as it is attached to a "key". In 
+                            the latter cases, a "key" is basically an identifier that you 
+                            attach them to.
+                        </p>
+                        <p>
+                            Before we move on to talk about objects and arrays, we need to 
                             first understand what "variables" are. Variable or var 
                             represents an element or key in a mathematical context. 
                             <em><u>Why is this important!?</u> We have to remember that
                             all coding languages are mathematical, therefore we have to 
-                            speak its language inorder for it to understand our intentions.</em></p>
-
-                        <p><em><strong>Example of key as object:</strong></em></p>
-                        <div class="example1">
-                            <p>var x = {</p>
-                            <p>name: "John", // anything inside "" is a string</p>
-                            <p>age: 25, // number</p>
-                            <p>isStrange: true // boolean (true/false)</p>
-                            <p>}</p>
-                        </div>
-
-                        <p>In the example given, in case you haven't worked it out 
+                            speak its language inorder for it to understand our intentions.</em>
+                        </p>
+                        <p>
+                            <em><strong>Example of key as object:</strong></em>
+                        </p>
+                            <div class="example1">
+                                <p>var x = {</p>
+                                <p>name: "John", // anything inside "" is a string</p>
+                                <p>age: 25, // number</p>
+                                <p>isStrange: true // boolean (true/false)</p>
+                                <p>}</p>
+                            </div>
+                        <p>
+                            In the example given, in case you haven't worked it out 
                             already, the key is "x". The reason why the properties in 
                             these keys cannot ever be an object is becasue objects can be 
                             manipulated/changed (e.g. age can later be changed to age = 20 
                             and the computer will take the last definied number as it's 
                             value,remember control flow), while the numbers, strings and 
                             booleans are absolute (15 will always be 15 and true is always 
-                            true etc.).</p>
-                        
-                        <p><em><strong><u>For future references!</u></strong> If you are 
+                            true etc.).
+                        </p>    
+                        <p>
+                            <em><strong><u>For future references!</u></strong> If you are 
                             using VScode like me to do all your HTML, CSS and JavaScript 
                             work, you can access your "Console" using "Command" + "Shift" 
                             + "P" and selecting "Debug Console". This will show the 
                             results of any "console.log" commands or "returns" from 
                             functions. Try it out using the example provided if you'd 
-                            like!</em></p>
-
-                        <p>Lets talk about arrays, arrays are special variables that can 
+                            like!</em>
+                        </p>
+                        <p>
+                            Lets talk about arrays, arrays are special variables that can 
                             contain more than one value at a time. We can look at it like 
                             a shopping list, the list itself is an array and all the 
-                            things in the list are the variables that it contains.</p>
-                        <p><em><strong>Example of an array:</strong></em></p>
+                            things in the list are the variables that it contains.
+                        </p>
+                        <p>
+                            <em><strong>Example of an array:</strong></em>
+                        </p>
                             <div class="example1">
-                                <p>var shopping_list = ["leek", "celery", "carrot"]</p>
+                                <p>
+                                    var shopping_list = ["leek", "celery", "carrot"]
+                                </p>
                             </div>
-
-                        <p>In this case the array has been given a name "shopping_list" 
+                        <p>
+                            In this case the array has been given a name "shopping_list" 
                             and given leek, celery and carrot as its three values. Now 
                             that we have defined the variable shopping_list, we can 
-                            retrieve the items in the list at a later stage.</p>
-
-                        <p>So how do you access the information in objects and arrays? As 
+                            retrieve the items in the list at a later stage.
+                        </p>
+                        <p>
+                            So how do you access the information in objects and arrays? As 
                             we have given them all names and/or keys as variables, we can 
                             call on the values at any time, like calling your friend by 
                             name. By taking into account the above examples of objects and 
-                            arrays, we can call them like this:</p>
+                            arrays, we can call them like this:
+                        </p>
                             <div class = "example1">
                                 <p><strong>Objects</strong></p>
                                 <p>console.log(x.name) // retruns John</p>
                                 <p><strong>Array</strong></p>
                                 <p>console.log (shopping_list[1]) // returns celery</p>
                             </div>
-
-                        <p>In order to call objects, first you have to reference its key 
+                        <p>
+                            In order to call objects, first you have to reference its key 
                             (x), then the name that that you have given to that specific 
                             object (name) with a "." between them. This means that if we 
-                            were to write <em>x.age</em> it would then return <em>25</em>.</p> 
-                        
-                        <p>For Arrays, first we have to remember that you have to call 
+                            were to write <em>x.age</em> it would then return <em>25</em>.
+                        </p>
+                        <p>
+                            For Arrays, first we have to remember that you have to call 
                             them by their index numbers, which actually starts from 0 to 1 
                             to 2 and so on. What we see as second in the list is actually 
                             1 in index numbers. To access that value, we must first 
                             declare its variable name (shopping_list) followed by its 
-                            index number [1].</p>
-
+                            index number [1].
+                        </p>
             <h2>What are functions and why are they useful?</h2>
-                <p>We can control many aspects of the website when it comes to the 
+                <p>
+                    We can control many aspects of the website when it comes to the 
                     interactive side of things using functions. A function is like a math 
                     equation but with code, it is a block of code that is designed to 
                     perform a specific task or calculate a value when executed(or 
                     "invoked"). A good example is at the bottom of a Trademe listing, you 
-                    will find something like this:</p>
+                    will find something like this:
+                </p>
                 <img src="../images/viewcount.png" alt="example of view count" class="float_left1">
-
                 <p>This count is updated everytime someone clicks on the listing. This 
                     count uses a "function", where by the click action passes through the 
                     defined parameters and arguement set inside the function and produces 
-                    the increased page count in realtime.</p>
-            
-                <p>Once named, A function can be used over and over again without us 
+                    the increased page count in realtime.
+                </p>
+                <p>
+                    Once named, A function can be used over and over again without us 
                     needed to rewrite a completely new block of code everytime we want to 
                     to pass through a different set of values while using the same set of 
                     rules/argument. Like loop, it is there to make our code a lot less 
-                    redundent.</p>
-
-                <p><strong>Example:</strong></p>
+                    redundent.
+                </p>
+                <p>
+                    <strong>Example:</strong>
+                </p>
                     <div class="example1">
                         <p>function ShowMessage(firstName, lastName) {</p>
                         <ul class = "nodot">
@@ -235,15 +273,25 @@
                         <p>ShowMessage("Bill", "Gates");</p>
                     </div>
 
-                <p>As you would have guessed the new ShowMessage results that we would get 
-                    from the names that I put in after ' } ' would be "Hello Steve Jobs" 
-                    and "Hello Bill Gates" respectively. This example has shown us that 
-                    instead of having to write</p>
-                <p><em>comsole.log("Hello newFirstName newLastName")</em></p> 
-                <p>everytime we get more names, we can just use the function name 
-                    ShowMessage(__,__) for every new name that we come across after the function declaration.</p>
-                <p><em><strong><u>Note:</u></strong> Functions do not automatically create 
-                    spaces so you will have to add them manually INSIDE the function.</em></p>
+                <p>
+                    As you would have guessed the new ShowMessage results that we would 
+                    get from the names that I put in after ' } ' would be "Hello Steve 
+                    Jobs" and "Hello Bill Gates" respectively. This example has shown us 
+                    that instead of having to write
+                </p>
+                <p>
+                    <em>comsole.log("Hello newFirstName newLastName")</em>
+                </p> 
+                <p>
+                    everytime we get more names, we can just use the function name 
+                    ShowMessage(__,__) for every new name that we come across after the 
+                    function declaration.
+                </p>
+                <p>
+                    <em><strong><u>Note:</u></strong> Functions do not automatically 
+                    create spaces so you will have to add them manually INSIDE the 
+                    function.</em>
+                </p>
         </div>    
         </div>
     </body>
