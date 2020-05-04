@@ -11,7 +11,7 @@
     border-radius: 5px 5px 0 0;
     padding: 10px;
     position: absolute;
-    left: 0px;
+    left: -91px;
     top: 60px;
     transform: rotateZ(270deg);
 }
@@ -23,6 +23,7 @@
     margin: 0 auto;
     max-width: 800px;
     border-radius: 15px;
+    position: relative;
 }
 
 .text_width {
