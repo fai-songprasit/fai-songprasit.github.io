@@ -64,6 +64,36 @@ header img {
     height: 225px;
 }
 
+@media only screen and (max-width: 600px) {
+    .float_right {
+        float: none;
+        width: 75%;
+        margin: auto;
+        height: auto;
+        display: block;
+    }
+}
+
+.float_left {
+    border : dashed;
+    border-color: teal;
+    border-radius: 5px;
+    margin: 0px 10px 5px 5px;
+    float: left;
+    width: 350px;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .float_left {
+        float: none;
+        width: 75%;
+        margin: auto;
+        height: auto;
+        display: block;
+    }
+}
+
 .float_left1 {
     border : dashed;
     border-color: teal;
